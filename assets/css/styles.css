@@ -483,3 +483,66 @@ body.dark-theme {
 .steps__card:hover .steps__card-number {
   transform: translateY(-0.25rem);
 }
+
+/*=============== PRODUCTS ===============*/
+.product__description {
+  text-align: center;
+}
+
+.product__container {
+  padding: 3rem 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 3rem;
+}
+
+.product__card {
+  display: grid;
+  position: relative;
+}
+
+.product__img {
+  position: relative;
+  width: 160px;
+  justify-self: center;
+  margin-bottom: var(--mb-0-75);
+  transition: 0.3s;
+  border-radius: 5%;
+}
+
+.product__title {
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  margin-bottom: 0.25rem;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.product__button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.25rem;
+  border-radius: 0.35rem;
+  font-size: 1.15rem;
+}
+
+.product__button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.product__circle {
+  width: 90px;
+  height: 90px;
+  background-color: var(--first-color-lighten);
+  border-radius: 50%;
+  position: absolute;
+  top: 18%;
+  left: 5%;
+}
+
+.product__card:hover .product__img {
+  transform: translateY(-0.5rem);
+}

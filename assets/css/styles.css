@@ -293,6 +293,10 @@ body.dark-theme {
 .show-menu {
   right: 0;
 }
+/* Change background header */
+.scroll-header {
+  box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, 0.1);
+}
 /*=============== HOME ===============*/
 .home {
   padding: 5rem 0 2rem;

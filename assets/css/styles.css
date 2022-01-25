@@ -289,3 +289,7 @@ body.dark-theme {
 
   font-weight: var(--font-medium);
 }
+/* Show menu */
+.show-menu {
+  right: 0;
+}

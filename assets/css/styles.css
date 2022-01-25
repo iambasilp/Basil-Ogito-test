@@ -297,6 +297,21 @@ body.dark-theme {
 .scroll-header {
   box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, 0.1);
 }
+/* Active link */
+.active-link {
+  position: relative;
+  color: var(--first-color);
+}
+
+.active-link::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: var(--first-color);
+}
 /*=============== HOME ===============*/
 .home {
   padding: 5rem 0 2rem;

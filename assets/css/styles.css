@@ -5,7 +5,7 @@
 :root {
   --header-height: 3.5rem; /*56px*/
 
-  /*========== Colors ==========*/  /*Color mode HSL(hue, saturation, lightness)*/
+  /*========== Colors ==========*/ /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 152;
 
   --first-color: hsl(354, 70%, 54%);
@@ -638,57 +638,6 @@ body.dark-theme {
   transform: rotate(45deg);
 }
 
-/* ownercard */
-.cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.card-wrap {
-  position: relative;
-  margin: 1.7rem 0.8rem;
-}
-
-.card {
-  position: relative;
-  width: 100%;
-  max-width: 280px;
-  min-height: 320px;
-  background-color: var(--light-three);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem 1rem;
-  overflow: hidden;
-  border-radius: 1rem;
-  transition: 0.3s;
-}
-.gallery-image {
-  position: relative;
-  overflow: hidden;
-  height: 330px;
-  width: 330px;
-  cursor: pointer;
-}
-
-.gallery-image img {
-  position: absolute;
-  height: 115%;
-  width: initial;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform-origin: center;
-  transition: 0.5s;
-}
-.card-wrap:hover .card {
-  transform: translateY(-15px);
-}
-
-/* ownercard  */
-
 /*=============== CONTACT ===============*/
 .contact__container {
   row-gap: 3.5rem;
@@ -1132,4 +1081,3 @@ body.dark-theme {
     right: 3rem;
   }
 }
-

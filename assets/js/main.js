@@ -1,3 +1,4 @@
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -18,6 +19,7 @@ if (navClose) {
     navMenu.classList.remove("show-menu");
   });
 }
+
 
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll(".nav__link");
@@ -134,6 +136,19 @@ themeButton.addEventListener("click", () => {
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
+});
+
+/*=============== HOME SWIPER ===============*/
+const swiper = new Swiper('.swiper', {
+  
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+    autoplay: {
+    delay: 5000,
+  },
 });
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/

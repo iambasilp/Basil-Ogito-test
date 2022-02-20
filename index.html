@@ -9,7 +9,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-
+    <!--=============== SWIPER SLIDER ===============-->
+     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
@@ -60,52 +61,116 @@
     </header>
 
     <main class="main">
+     
       <!--==================== HOME ====================-->
       <section class="home" id="home">
-        <div class="home__container container grid">
-          <img src="assets/img/home.png" alt="" class="home__img" />
+     <!-- Slider main container -->
+        <div class="swiper">
+  <!-- Additional required wrapper -->
+           <div class="swiper-wrapper">
+    <!-- Slides -->
+              <div class="swiper-slide">
+      <div class="home__container container grid">
+        <img src="assets/img/home.png" alt="" class="home__img" />
 
-          <div class="home__data">
-            <h1 class="home__title">
-              Samosa will make <br />
-              your life better
-            </h1>
-            <p class="home__description">
-              Ogito helps you to make a perfect crispy samosa, taste with ogito and enjoy
-            </p>
-            <a href="#about" class="button button--flex">
-              Explore <i class="ri-arrow-right-down-line button__icon"></i>
+        <div class="home__data">
+          <h1 class="home__title">
+            Samosa will make <br />
+            your life better
+          </h1>
+          <p class="home__description">
+            Ogito helps you to make a perfect crispy samosa, taste with ogito and enjoy
+          </p>
+          <a href="#about" class="button button--flex">
+            Explore <i class="ri-arrow-right-down-line button__icon"></i>
+          </a>
+        </div>
+
+        <div class="home__social">
+          <span class="home__social-follow">Follow Us</span>
+
+          <div class="home__social-links">
+            <a
+              href="https://www.facebook.com/Ogito-Foods-108855928335688/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/basil_pkt/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a
+              href="https://twitter.com/BPulikuth?t=Ru_Cdf3kTd2SNBq5IY7leQ&s=09"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-twitter-fill"></i>
             </a>
           </div>
+        </div>
+       </div>
+              </div>
+              <div class="swiper-slide">
+      <div class="home__container container grid">
+        <img src="assets/img/home.png" alt="" class="home__img" />
 
-          <div class="home__social">
-            <span class="home__social-follow">Follow Us</span>
+        <div class="home__data">
+          <h1 class="home__title">
+            Samosa will make <br />
+            your life better
+          </h1>
+          <p class="home__description">
+            Ogito helps you to make a perfect crispy samosa, taste with ogito and enjoy
+          </p>
+          <a href="#about" class="button button--flex">
+            Explore <i class="ri-arrow-right-down-line button__icon"></i>
+          </a>
+        </div>
 
-            <div class="home__social-links">
-              <a
-                href="https://www.facebook.com/Ogito-Foods-108855928335688/"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="ri-facebook-fill"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/basil_pkt/"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="ri-instagram-line"></i>
-              </a>
-              <a
-                href="https://twitter.com/BPulikuth?t=Ru_Cdf3kTd2SNBq5IY7leQ&s=09"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="ri-twitter-fill"></i>
-              </a>
-            </div>
+        <div class="home__social">
+          <span class="home__social-follow">Follow Us</span>
+
+          <div class="home__social-links">
+            <a
+              href="https://www.facebook.com/Ogito-Foods-108855928335688/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/basil_pkt/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a
+              href="https://twitter.com/BPulikuth?t=Ru_Cdf3kTd2SNBq5IY7leQ&s=09"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-twitter-fill"></i>
+            </a>
           </div>
         </div>
+       </div>
+              </div>
+    ...
+        </div>
+        <div class="swiper-pagination"></div>
+  
+
+ 
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
       </section>
       <!--==================== ABOUT ====================-->
       <section class="about section container" id="about">
@@ -489,8 +554,11 @@
       <i class="ri-arrow-up-fill scrollup__icon"></i>
     </a>
 
+    
+    
     <!--=============== SCROLL REVEAL ===============-->
     <script src="./assets/js/scrollreveal.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
   </body>

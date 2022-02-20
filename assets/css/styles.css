@@ -378,6 +378,32 @@ body.dark-theme {
 .home__social-link:hover {
   transform: translateX(0.25rem);
 }
+/* Swiper Class */
+.swiper-pagination {
+  position: initial;
+  margin-top: var(--mb-1);
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 0.5rem;
+}
+.swiper-horizontal>.swiper-scrollbar{
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  width: 1.5rem;
+  height: 5px;
+  border-radius: 0.5rem;
+}
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;

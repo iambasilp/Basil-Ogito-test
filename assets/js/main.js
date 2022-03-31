@@ -38,6 +38,19 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
+/*=============== HOME SWIPER ===============*/
+const swiper = new Swiper('.swiper', {
+  
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+    autoplay: {
+    delay: 2600,
+  },
+});
+
 /*=============== QUESTIONS ACCORDION ===============*/
 const accordionItems = document.querySelectorAll(".questions__item");
 

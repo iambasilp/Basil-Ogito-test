@@ -1,3 +1,4 @@
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -19,6 +20,7 @@ if (navClose) {
   });
 }
 
+
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll(".nav__link");
 
@@ -37,19 +39,6 @@ function scrollHeader() {
   else header.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
-
-/*=============== HOME SWIPER ===============*/
-const swiper = new Swiper('.swiper', {
-  
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-    autoplay: {
-    delay: 2600,
-  },
-});
 
 /*=============== QUESTIONS ACCORDION ===============*/
 const accordionItems = document.querySelectorAll(".questions__item");
@@ -149,6 +138,20 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
+/*=============== HOME SWIPER ===============*/
+const swiper = new Swiper('.swiper', {
+  
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+    autoplay: {
+    delay: 2600,
+  },
+});
+
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
   origin: "top",
@@ -158,8 +161,8 @@ const sr = ScrollReveal({
   // reset: true
 });
 
-sr.reveal(`.home__data`);
-sr.reveal(`.home__img`, { delay: 500 });
+sr.reveal(`.homeOne_data`);
+sr.reveal(`.homeOne_img`, { delay: 500 });
 sr.reveal(`.home__social`, { delay: 600 });
 sr.reveal(`.about__img, .contact__box`, { origin: "left" });
 sr.reveal(`.about__data, .contact__form`, { origin: "right" });

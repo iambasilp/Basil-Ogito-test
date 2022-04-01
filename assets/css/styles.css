@@ -683,10 +683,22 @@ body.dark-theme {
 
 .contact__description {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   column-gap: 0.5rem;
   color: var(--title-color);
   font-weight: var(--font-medium);
+}
+.contactnum{
+  display:block;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+.contact__description a{
+  color: var(--text-color);
 }
 
 .contact__icon {
@@ -813,6 +825,9 @@ body.dark-theme {
 
 .footer__information {
   font-size: var(--small-font-size);
+}
+.footer__information a{
+  color: var(--text-color);
 }
 
 .footer__social {

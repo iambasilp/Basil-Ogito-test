@@ -6,5 +6,5 @@
 - Includes a dark and light mode.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
-- Link is here https://iambasilp.github.io/community-services/
+- Link is here [https://iambasilp.github.io/community-services/](https://iambasilp.github.io/Community-Services/)
 

@@ -157,14 +157,14 @@ const swiper = new Swiper('.swiper', {
 const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
-  duration: 2500,
-  delay: 400,
+  duration: 2200,
+  delay: 300,
   // reset: true
 });
 
 sr.reveal(`.homeOne_data`);
-sr.reveal(`.homeOne_img`, { delay: 500 });
-sr.reveal(`.homeOne_social`, { delay: 600 });
+sr.reveal(`.homeOne_img`, { delay: 300 });
+sr.reveal(`.homeOne_social`, { delay: 300 });
 sr.reveal(`.about__img, .contact__box`, { origin: "left" });
 sr.reveal(`.about__data, .contact__form`, { origin: "right" });
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`, {
